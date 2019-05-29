@@ -1,0 +1,1055 @@
+[
+   {
+      "model":"heroes.hero",
+      "pk":1,
+      "fields":{
+         "name":"Abaddon",
+         "counters":"Ancient Apparition,Brewmaster,Doom,Outworld Devourer,Shadow Demon,",
+         "image":"media/Abaddon.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":2,
+      "fields":{
+         "name":"Alchemist",
+         "counters":"Ancient Apparition,Enchantress,Invoker,Lifestealer,Necrophos,Slardar,Slark,Ursa,Ember Spirit,Juggernaut,",
+         "image":"media/Alchemist.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":3,
+      "fields":{
+         "name":"Axe",
+         "counters":"Doom,Jakiro,Lifestealer,Necrophos,Outworld Devourer,Phoenix,Pugna,Ursa,Undying,Venomancer,Viper,",
+         "image":"media/Axe.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":4,
+      "fields":{
+         "name":"Beastmaster",
+         "counters":"Abaddon,Enchantress,Earthshaker,Keeper of the Light,Oracle,Timbersaw,Winter Wyvern,",
+         "image":"media/Beastmaster.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":5,
+      "fields":{
+         "name":"Brewmaster",
+         "counters":"Bane,Death Prophet,Lion,Outworld Devourer,Shadow Shaman,Skywrath Mage,",
+         "image":"media/Brewmaster.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":6,
+      "fields":{
+         "name":"Bristleback",
+         "counters":"Anti-Mage,Doom,Faceless Void,Grimstroke,Legion Commander,Lion,Necrophos,Outworld Devourer,Razor,Silencer,Slardar,Timbersaw,Viper,Weaver,",
+         "image":"media/Bristleback.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":7,
+      "fields":{
+         "name":"Centaur Warrunner",
+         "counters":"Disruptor,Lifestealer,Necrophos,Nyx Assassin,Templar Assassin,",
+         "image":"media/Centaur Warrunner.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":8,
+      "fields":{
+         "name":"Chaos Knight",
+         "counters":"Tinker,Axe,Lion,Terrorblade,Brewmaster,Dragon Knight,Earthshaker,Enigma,Jakiro,Lich,Magnus,Monkey King,Phantom Lancer,Omniknight,Pugna,Sand King,Sven,Tidehunter,Timbersaw,Winter Wyvern,Puck,",
+         "image":"media/Chaos Knight.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":9,
+      "fields":{
+         "name":"Clockwerk",
+         "counters":"Anti-Mage,Chen,Clinkz,Dazzle,Disruptor,Ember Spirit,Huskar,Juggernaut,Lifestealer,Morphling,Omniknight,Phantom Lancer,Phoenix,Queen of Pain,Terrorblade,Ursa,Visage,",
+         "image":"media/Clockwerk.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":10,
+      "fields":{
+         "name":"Doom",
+         "counters":"Alchemist,Centaur Warrunner,Drow Ranger,Lifestealer,Lone Druid,Medusa,Necrophos,Phantom Lancer,Sniper,Viper,Wraith King,",
+         "image":"media/Doom.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":11,
+      "fields":{
+         "name":"Dragon Knight",
+         "counters":"Ancient Apparition,Bristleback,Lich,Necrophos,Ursa,Outworld Devourer,Razor,Timbersaw,Viper,",
+         "image":"media/Dragon Knight.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":12,
+      "fields":{
+         "name":"Earth Spirit",
+         "counters":"Abaddon,Lycan,Techies,",
+         "image":"media/Earth Spirit.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":13,
+      "fields":{
+         "name":"Earthshaker",
+         "counters":"Clockwerk,Death Prophet,Disruptor,Earth Spirit,Jakiro,Lifestealer,Necrophos,Night Stalker,Outworld Devourer,Puck,Razor,Rubick,Skywrath Mage,Sniper,Spectre,Templar Assassin,Venomancer,Viper,Windranger,Zeus,",
+         "image":"media/Earthshaker.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":14,
+      "fields":{
+         "name":"Elder Titan",
+         "counters":"Brewmaster,Clockwerk,Lich,Lion,Sven,Juggernaut,",
+         "image":"media/Elder Titan.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":15,
+      "fields":{
+         "name":"Huskar",
+         "counters":"Abaddon,Alchemist,Ancient Apparition,Axe,Bristleback,Chaos Knight,Enchantress,Bloodseeker,Juggernaut,Lifestealer,Naga Siren,Slardar,Ursa,Windranger,Necrophos,",
+         "image":"media/Huskar.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":16,
+      "fields":{
+         "name":"Io",
+         "counters":"Ancient Apparition,Bloodseeker,Bristleback,Clinkz,Disruptor,Legion Commander,Leshrac,Luna,Phantom Assassin,Sniper,Spirit Breaker,Treant Protector,Winter Wyvern,",
+         "image":"media/Io.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":17,
+      "fields":{
+         "name":"Kunkka",
+         "counters":"Clinkz,Ursa,Silencer,Mirana,Phoenix,Omniknight,Huskar,Juggernaut,Lifestealer,Sniper,Outworld Devourer,",
+         "image":"media/Kunkka.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":18,
+      "fields":{
+         "name":"Legion Commander",
+         "counters":"Abaddon,Bane,Dazzle,Dragon Knight,Io,Mars,Medusa,Omniknight,Oracle,Pudge,Pugna,Razor,Sven,Treant Protector,Underlord,Ursa,Visage,Vengeful Spirit,Winter Wyvern,Witch Doctor,",
+         "image":"media/Legion Commander.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":19,
+      "fields":{
+         "name":"Lifestealer",
+         "counters":"Ancient Apparition,Bane,Beastmaster,Chaos Knight,Clinkz,Terrorblade,Phantom Lancer,Slark,Ursa,Weaver,",
+         "image":"media/Lifestealer.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":20,
+      "fields":{
+         "name":"Lycan",
+         "counters":"Axe,Beastmaster,Bloodseeker,Bristleback,Omniknight,Phantom Assassin,Sven,Timbersaw,Faceless Void,",
+         "image":"media/Lycan.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":21,
+      "fields":{
+         "name":"Magnus",
+         "counters":"Alchemist,Night Stalker,Phoenix,Rubick,Sniper,Spectre,Treant Protector,Tinker,Venomancer,Wraith King,Zeus,",
+         "image":"media/Magnus.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":22,
+      "fields":{
+         "name":"Mars",
+         "counters":"Batrider,Faceless Void,Huskar,Lina,Naga Siren,Necrophos,Ogre Magi,Oracle,Outworld Devourer,Pugna,Shadow Fiend,Underlord,Undying,Ursa,Venomancer,Viper,Zeus,",
+         "image":"media/Mars.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":23,
+      "fields":{
+         "name":"Night Stalker",
+         "counters":"Chaos Knight,Lycan,Naga Siren,Phantom Lancer,Sven,Troll Warlord,",
+         "image":"media/Night Stalker.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":24,
+      "fields":{
+         "name":"Omniknight",
+         "counters":"Brewmaster,Doom,Invoker,Naga Siren,Oracle,Outworld Devourer,Rubick,Silencer,",
+         "image":"media/Omniknight.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":25,
+      "fields":{
+         "name":"Phoenix",
+         "counters":"Troll Warlord,Night Stalker,Huskar,Ursa,Silencer,Lifestealer,Juggernaut,Meepo,Bloodseeker,Viper,Necrophos,",
+         "image":"media/Phoenix.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":26,
+      "fields":{
+         "name":"Pudge",
+         "counters":"Abaddon,Anti-Mage,Bristleback,Bounty Hunter,Dazzle,Doom,Legion Commander,Lifestealer,Mirana,Monkey King,Night Stalker,Nyx Assassin,Outworld Devourer,Slardar,Slark,Tidehunter,Timbersaw,Venomancer,Weaver,",
+         "image":"media/Pudge.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":27,
+      "fields":{
+         "name":"Sand King",
+         "counters":"Earth Spirit,Kunkka,Phoenix,Rubick,Silencer,Zeus,",
+         "image":"media/Sand King.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":28,
+      "fields":{
+         "name":"Slardar",
+         "counters":"Oracle,Abaddon,Phantom Lancer,Meepo,",
+         "image":"media/Slardar.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":29,
+      "fields":{
+         "name":"Spirit Breaker",
+         "counters":"Clockwerk,Ember Spirit,Outworld Devourer,Enigma,Invoker,Medusa,Meepo,Phoenix,Razor,Treant Protector,Underlord,Undying,",
+         "image":"media/Spirit Breaker.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":30,
+      "fields":{
+         "name":"Sven",
+         "counters":"Clockwerk,Enchantress,Lifestealer,Phantom Assassin,Razor,Omniknight,Sniper,Spectre,Troll Warlord,Venomancer,Winter Wyvern,Wraith King,",
+         "image":"media/Sven.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":31,
+      "fields":{
+         "name":"Tidehunter",
+         "counters":"Disruptor,Enigma,Luna,Outworld Devourer,Razor,Rubick,Silencer,Slark,Sniper,Ursa,Weaver,",
+         "image":"media/Tidehunter.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":32,
+      "fields":{
+         "name":"Timbersaw",
+         "counters":"Bane,Doom,Ember Spirit,Faceless Void,Invoker,Lion,Necrophos,Outworld Devourer,Pangolier,Pugna,Shadow Shaman,Skywrath Mage,Silencer,Storm Spirit,Zeus,",
+         "image":"media/Timbersaw.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":33,
+      "fields":{
+         "name":"Tiny",
+         "counters":"Bristleback,Juggernaut,Lifestealer,Lion,Necrophos,Slardar,Viper,",
+         "image":"media/Tiny.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":34,
+      "fields":{
+         "name":"Treant Protector",
+         "counters":"Nature's Prophet,Phantom Lancer,Rubick,Slardar,Timbersaw,Venomancer,Viper,",
+         "image":"media/Treant Protector.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":35,
+      "fields":{
+         "name":"Tusk",
+         "counters":"Anti-Mage,Disruptor,Earth Spirit,Earthshaker,Phantom Lancer,Razor,Techies,",
+         "image":"media/Tusk.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":36,
+      "fields":{
+         "name":"Underlord",
+         "counters":"Bloodseeker,Io,Kunkka,Nature's Prophet,Spectre,Sniper,Treant Protector,Winter Wyvern,Rubick,Shadow Fiend,Visage,Ursa,",
+         "image":"media/Underlord.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":37,
+      "fields":{
+         "name":"Undying",
+         "counters":"Alchemist,Earthshaker,Gyrocopter,Luna,Necrophos,Silencer,",
+         "image":"media/Undying.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":38,
+      "fields":{
+         "name":"Wraith King",
+         "counters":"Anti-Mage,Chaos Knight,Invoker,Lion,Phantom Lancer,Riki,Slark,Terrorblade,Weaver,",
+         "image":"media/Wraith King.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":39,
+      "fields":{
+         "name":"Anti-Mage",
+         "counters":"Axe,Bane,Bloodseeker,Disruptor,Doom,Drow Ranger,Grimstroke,Legion Commander,Meepo,Night Stalker,Outworld Devourer,Phantom Assassin,Slardar,Slark,Shadow Demon,Templar Assassin,Troll Warlord,Viper,",
+         "image":"media/Anti-Mage.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":40,
+      "fields":{
+         "name":"Arc Warden",
+         "counters":"Anti-Mage,Bristleback,Meepo,Naga Siren,Riki,Phantom Lancer,Chaos Knight,",
+         "image":"media/Arc Warden.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":41,
+      "fields":{
+         "name":"Bloodseeker",
+         "counters":"Abaddon,Dazzle,Ember Spirit,Faceless Void,Medusa,Morphling,Omniknight,Storm Spirit,Techies,Tinker,Troll Warlord,Underlord,Wraith King,",
+         "image":"media/Bloodseeker.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":42,
+      "fields":{
+         "name":"Bounty Hunter",
+         "counters":"Bloodseeker,Rubick,Slardar,Spectre,Spirit Breaker,Venomancer,Viper,Zeus,",
+         "image":"media/Bounty Hunter.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":43,
+      "fields":{
+         "name":"Broodmother",
+         "counters":"Bristleback,Dark Seer,Dragon Knight,Legion Commander,Lina,Meepo,Necrophos,Sven,Tidehunter,Timbersaw,",
+         "image":"media/Broodmother.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":44,
+      "fields":{
+         "name":"Clinkz",
+         "counters":"Bounty Hunter,Bloodseeker,Enchantress,Lion,Slardar,Spirit Breaker,Treant Protector,",
+         "image":"media/Clinkz.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":45,
+      "fields":{
+         "name":"Drow Ranger",
+         "counters":"Tinker,Tusk,Axe,Clockwerk,Huskar,Lycan,Riki,Phantom Lancer,Pudge,Chaos Knight,Nyx Assassin,Omniknight,",
+         "image":"media/Drow Ranger.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":46,
+      "fields":{
+         "name":"Ember Spirit",
+         "counters":"Clinkz,Lion,Shadow Fiend,Silencer,Storm Spirit,Faceless Void,Omniknight,Outworld Devourer,Riki,Nyx Assassin,Kunkka,",
+         "image":"media/Ember Spirit.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":47,
+      "fields":{
+         "name":"Faceless Void",
+         "counters":"Abaddon,Brewmaster,Earth Spirit,Night Stalker,Phoenix,Pudge,Shadow Demon,Silencer,Vengeful Spirit,Grimstroke,Sven,",
+         "image":"media/Faceless Void.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":48,
+      "fields":{
+         "name":"Gyrocopter",
+         "counters":"Arc Warden,Huskar,Juggernaut,Lina,Lifestealer,Omniknight,Queen of Pain,Timbersaw,",
+         "image":"media/Gyrocopter.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":49,
+      "fields":{
+         "name":"Juggernaut",
+         "counters":"Axe,Bane,Chaos Knight,Doom,Faceless Void,Omniknight,Outworld Devourer,Ursa,",
+         "image":"media/Juggernaut.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":50,
+      "fields":{
+         "name":"Lone Druid",
+         "counters":"Phantom Assassin,Faceless Void,Legion Commander,Slark,Tinker,",
+         "image":"media/Lone Druid.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":51,
+      "fields":{
+         "name":"Luna",
+         "counters":"Arc Warden,Bristleback,Broodmother,Juggernaut,Lina,Meepo,Phantom Lancer,Pudge,Sniper,Slark,Techies,Tinker,Zeus,",
+         "image":"media/Luna.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":52,
+      "fields":{
+         "name":"Medusa",
+         "counters":"Anti-Mage,Arc Warden,Invoker,Meepo,Nyx Assassin,Outworld Devourer,Phantom Lancer,Slark,Sniper,",
+         "image":"media/Medusa.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":53,
+      "fields":{
+         "name":"Meepo",
+         "counters":"Lich,Axe,Earthshaker,Ember Spirit,Kunkka,Pangolier,Sven,Terrorblade,Winter Wyvern,",
+         "image":"media/Meepo.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":54,
+      "fields":{
+         "name":"Mirana",
+         "counters":"Abaddon,Arc Warden,Bloodseeker,Lina,Lycan,Meepo,Night Stalker,Puck,Slark,Windranger,",
+         "image":"media/Mirana.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":55,
+      "fields":{
+         "name":"Monkey King",
+         "counters":"Batrider,Beastmaster,Bounty Hunter,Brewmaster,Clockwerk,Disruptor,Earth Spirit,Enigma,Huskar,Keeper of the Light,Lina,Magnus,Pangolier,Phantom Assassin,Pudge,Queen of Pain,Slardar,Spectre,Spirit Breaker,Storm Spirit,Techies,Timbersaw,Vengeful Spirit,Venomancer,Viper,Visage,Windranger,",
+         "image":"media/Monkey King.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":56,
+      "fields":{
+         "name":"Morphling",
+         "counters":"Ancient Apparition,Anti-Mage,Arc Warden,Earth Spirit,Ember Spirit,Elder Titan,Lion,Meepo,Mirana,Outworld Devourer,Rubick,Skywrath Mage,",
+         "image":"media/Morphling.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":57,
+      "fields":{
+         "name":"Naga Siren",
+         "counters":"Axe,Enchantress,Earthshaker,Huskar,Lion,Outworld Devourer,Timbersaw,Viper,Zeus,",
+         "image":"media/Naga Siren.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":58,
+      "fields":{
+         "name":"Nyx Assassin",
+         "counters":"Bounty Hunter,Slardar,Bloodseeker,Lifestealer,Juggernaut,Night Stalker,Visage,Arc Warden,",
+         "image":"media/Nyx Assassin.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":59,
+      "fields":{
+         "name":"Pangolier",
+         "counters":"Anti-Mage,Grimstroke,Beastmaster,Bloodseeker,Centaur Warrunner,Doom,Faceless Void,Medusa,Naga Siren,Necrophos,Outworld Devourer,Queen of Pain,Spirit Breaker,Storm Spirit,Treant Protector,Vengeful Spirit,Puck,",
+         "image":"media/Pangolier.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":60,
+      "fields":{
+         "name":"Phantom Assassin",
+         "counters":"Axe,Bane,Broodmother,Centaur Warrunner,Dragon Knight,Lina,Lion,Morphling,Omniknight,Phoenix,Puck,Razor,Skywrath Mage,Spectre,Timbersaw,Tinker,Viper,",
+         "image":"media/Phantom Assassin.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":61,
+      "fields":{
+         "name":"Phantom Lancer",
+         "counters":"Axe,Bristleback,Centaur Warrunner,Dragon Knight,Earthshaker,Ember Spirit,Gyrocopter,Kunkka,Legion Commander,Leshrac,Meepo,Magnus,Pangolier,Phoenix,Puck,Sand King,Storm Spirit,Sven,Witch Doctor,",
+         "image":"media/Phantom Lancer.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":62,
+      "fields":{
+         "name":"Razor",
+         "counters":"Anti-Mage,Chaos Knight,Earth Spirit,Huskar,Necrophos,Outworld Devourer,Queen of Pain,Slark,Sniper,Viper,Weaver,",
+         "image":"media/Razor.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":63,
+      "fields":{
+         "name":"Riki",
+         "counters":"Axe,Bounty Hunter,Bristleback,Luna,Omniknight,Sven,Legion Commander,Faceless Void,Razor,Slardar,Zeus,",
+         "image":"media/Riki.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":64,
+      "fields":{
+         "name":"Shadow Fiend",
+         "counters":"Axe,Bane,Bounty Hunter,Disruptor,Doom,Dragon Knight,Night Stalker,Pugna,Sniper,Spirit Breaker,Tinker,Ursa,Viper,Zeus,",
+         "image":"media/Shadow Fiend.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":65,
+      "fields":{
+         "name":"Slark",
+         "counters":"Ancient Apparition,Axe,Bloodseeker,Centaur Warrunner,Chaos Knight,Disruptor,Earthshaker,Meepo,Omniknight,Phantom Lancer,Puck,Tiny,",
+         "image":"media/Slark.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":66,
+      "fields":{
+         "name":"Sniper",
+         "counters":"Axe,Bloodseeker,Bounty Hunter,Centaur Warrunner,Clockwerk,Invoker,Lifestealer,Omniknight,Phantom Assassin,Phantom Lancer,Pudge,Slark,Spectre,Spirit Breaker,Storm Spirit,Tusk,Viper,Weaver,",
+         "image":"media/Sniper.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":67,
+      "fields":{
+         "name":"Spectre",
+         "counters":"Anti-Mage,Lycan,Necrophos,Lion,Meepo,Omniknight,Juggernaut,Pugna,Riki,Shadow Shaman,Storm Spirit,Terrorblade,Undying,Venomancer,Viper,Winter Wyvern,",
+         "image":"media/Spectre.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":68,
+      "fields":{
+         "name":"Templar Assassin",
+         "counters":"Arc Warden,Venomancer,Viper,Dragon Knight,Pudge,Huskar,",
+         "image":"media/Templar Assassin.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":69,
+      "fields":{
+         "name":"Terrorblade",
+         "counters":"Earth Spirit,Axe,Elder Titan,Ursa,Lina,Shadow Shaman,Ember Spirit,Dazzle,Necrophos,Outworld Devourer,Razor,Sven,Tinker,Zeus,",
+         "image":"media/Terrorblade.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":70,
+      "fields":{
+         "name":"Troll Warlord",
+         "counters":"Axe,Bane,Chaos Knight,Crystal Maiden,Lich,Oracle,Outworld Devourer,Razor,Sniper,Timbersaw,Underlord,Winter Wyvern,",
+         "image":"media/Troll Warlord.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":71,
+      "fields":{
+         "name":"Ursa",
+         "counters":"Bane,Lion,Riki,Templar Assassin,Viper,Weaver,Windranger,",
+         "image":"media/Ursa.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":72,
+      "fields":{
+         "name":"Vengeful Spirit",
+         "counters":"Anti-Mage,Nyx Assassin,Phantom Lancer,Spirit Breaker,Tidehunter,Viper,",
+         "image":"media/Vengeful Spirit.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":73,
+      "fields":{
+         "name":"Venomancer",
+         "counters":"Legion Commander,Slark,Rubick,Anti-Mage,Huskar,Oracle,Terrorblade,Sniper,",
+         "image":"media/Venomancer.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":74,
+      "fields":{
+         "name":"Viper",
+         "counters":"Broodmother,Chaos Knight,Invoker,Lifestealer,Phantom Lancer,Rubick,Terrorblade,Weaver,Windranger,",
+         "image":"media/Viper.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":75,
+      "fields":{
+         "name":"Weaver",
+         "counters":"Axe,Bloodseeker,Drow Ranger,Faceless Void,Night Stalker,Nyx Assassin,Skywrath Mage,Slardar,Zeus,",
+         "image":"media/Weaver.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":76,
+      "fields":{
+         "name":"Ancient Apparition",
+         "counters":"Anti-Mage,Brewmaster,Mirana,Oracle,Phantom Lancer,Phoenix,Terrorblade,Viper,Weaver,",
+         "image":"media/Ancient Apparition.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":77,
+      "fields":{
+         "name":"Bane",
+         "counters":"Rubick,Pudge,Slark,Tidehunter,",
+         "image":"media/Bane.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":78,
+      "fields":{
+         "name":"Batrider",
+         "counters":"Abaddon,Kunkka,Legion Commander,Nyx Assassin,Oracle,Tidehunter,Ursa,Vengeful Spirit,Venomancer,Weaver,Slark,",
+         "image":"media/Batrider.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":79,
+      "fields":{
+         "name":"Chen",
+         "counters":"Enchantress,Earthshaker,Legion Commander,Sven,Lina,Luna,Monkey King,Venomancer,Abaddon,Jakiro,Sand King,Timbersaw,Necrophos,Death Prophet,Dark Seer,Broodmother,Alchemist,Razor,Phoenix,Shadow Shaman,Elder Titan,Batrider,Ancient Apparition,Underlord,Witch Doctor,",
+         "image":"media/Chen.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":80,
+      "fields":{
+         "name":"Crystal Maiden",
+         "counters":"Bounty Hunter,Bristleback,Clockwerk,Doom,Earth Spirit,Legion Commander,Naga Siren,Nyx Assassin,Tidehunter,Tusk,Visage,",
+         "image":"media/Crystal Maiden.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":81,
+      "fields":{
+         "name":"Dark Seer",
+         "counters":"Anti-Mage,Ember Spirit,Oracle,Sniper,",
+         "image":"media/Dark Seer.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":82,
+      "fields":{
+         "name":"Dark Willow",
+         "counters":"Anti-Mage,Axe,Bristleback,Drow Ranger,Ember Spirit,Juggernaut,Lifestealer,Nyx Assassin,Oracle,Puck,Pudge,Riki,Silencer,Storm Spirit,",
+         "image":"media/Dark Willow.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":83,
+      "fields":{
+         "name":"Dazzle",
+         "counters":"Ancient Apparition,Axe,Naga Siren,Outworld Devourer,Phantom Lancer,Silencer,Doom,",
+         "image":"media/Dazzle.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":84,
+      "fields":{
+         "name":"Death Prophet",
+         "counters":"Ancient Apparition,Anti-Mage,Doom,Legion Commander,Omniknight,Shadow Fiend,",
+         "image":"media/Death Prophet.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":85,
+      "fields":{
+         "name":"Disruptor",
+         "counters":"Juggernaut,Lifestealer,Omniknight,Phantom Lancer,Pugna,Sniper,",
+         "image":"media/Disruptor.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":86,
+      "fields":{
+         "name":"Enchantress",
+         "counters":"Broodmother,Chen,Crystal Maiden,Juggernaut,Lifestealer,Lina,Luna,Meepo,Riki,Timbersaw,Troll Warlord,Venomancer,Windranger,",
+         "image":"media/Enchantress.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":87,
+      "fields":{
+         "name":"Enigma",
+         "counters":"Clockwerk,Medusa,Pudge,Rubick,Silencer,Sniper,Spectre,Storm Spirit,Vengeful Spirit,Warlock,Winter Wyvern,Zeus,",
+         "image":"media/Enigma.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":88,
+      "fields":{
+         "name":"Grimstroke",
+         "counters":"Anti-Mage,Huskar,Omniknight,Phoenix,Riki,Rubick,Shadow Demon,Silencer,Sniper,Vengeful Spirit,",
+         "image":"media/Grimstroke.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":89,
+      "fields":{
+         "name":"Invoker",
+         "counters":"Anti-Mage,Broodmother,Doom,Faceless Void,Lifestealer,Juggernaut,Night Stalker,Nyx Assassin,Queen of Pain,Silencer,Storm Spirit,Templar Assassin,Viper,",
+         "image":"media/Invoker.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":90,
+      "fields":{
+         "name":"Jakiro",
+         "counters":"Anti-Mage,Clockwerk,Lifestealer,Oracle,Rubick,Silencer,Skywrath Mage,",
+         "image":"media/Jakiro.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":91,
+      "fields":{
+         "name":"Keeper of the Light",
+         "counters":"Legion Commander,Lifestealer,Night Stalker,Nyx Assassin,",
+         "image":"media/Keeper of the Light.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":92,
+      "fields":{
+         "name":"Leshrac",
+         "counters":"Pugna,Anti-Mage,Clockwerk,Lifestealer,Nyx Assassin,",
+         "image":"media/Leshrac.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":93,
+      "fields":{
+         "name":"Lich",
+         "counters":"Anti-Mage,Broodmother,Huskar,Nature's Prophet,Weaver,",
+         "image":"media/Lich.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":94,
+      "fields":{
+         "name":"Lina",
+         "counters":"Anti-Mage,Faceless Void,Lifestealer,Nyx Assassin,Phantom Lancer,Silencer,Slark,Spectre,Sven,Viper,",
+         "image":"media/Lina.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":95,
+      "fields":{
+         "name":"Lion",
+         "counters":"Abaddon,Lifestealer,Puck,Rubick,Slark,Nyx Assassin,Tidehunter,",
+         "image":"media/Lion.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":96,
+      "fields":{
+         "name":"Nature's Prophet",
+         "counters":"Batrider,Broodmother,Clockwerk,Death Prophet,Doom,Earthshaker,Elder Titan,Faceless Void,Jakiro,Lina,Meepo,Naga Siren,Sand King,Spectre,Spirit Breaker,Storm Spirit,Tinker,Viper,",
+         "image":"media/Nature's Prophet.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":97,
+      "fields":{
+         "name":"Necrophos",
+         "counters":"Ancient Apparition,Anti-Mage,Dazzle,Meepo,Oracle,Phantom Lancer,Rubick,",
+         "image":"media/Necrophos.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":98,
+      "fields":{
+         "name":"Ogre Magi",
+         "counters":"Chaos Knight,Lifestealer,Meepo,Phantom Lancer,Omniknight,Oracle,",
+         "image":"media/Ogre Magi.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":99,
+      "fields":{
+         "name":"Oracle",
+         "counters":"Anti-Mage,Axe,Bristleback,Faceless Void,Shadow Demon,Spectre,",
+         "image":"media/Oracle.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":100,
+      "fields":{
+         "name":"Outworld Devourer",
+         "counters":"Legion Commander,Lone Druid,Nyx Assassin,Pugna,Rubick,Silencer,Sniper,Templar Assassin,",
+         "image":"media/Outworld Devourer.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":101,
+      "fields":{
+         "name":"Puck",
+         "counters":"Arc Warden,Faceless Void,Jakiro,Lycan,Night Stalker,Nyx Assassin,Silencer,Templar Assassin,Venomancer,Wraith King,",
+         "image":"media/Puck.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":102,
+      "fields":{
+         "name":"Pugna",
+         "counters":"Nyx Assassin,Clockwerk,Sniper,Phantom Lancer,Anti-Mage,Luna,Oracle,Storm Spirit,",
+         "image":"media/Pugna.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":103,
+      "fields":{
+         "name":"Queen of Pain",
+         "counters":"Anti-Mage,Arc Warden,Axe,Bloodseeker,Death Prophet,Disruptor,Faceless Void,Legion Commander,Luna,Meepo,Night Stalker,Nyx Assassin,Puck,Skywrath Mage,",
+         "image":"media/Queen of Pain.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":104,
+      "fields":{
+         "name":"Rubick",
+         "counters":"Bristleback,Clinkz,Legion Commander,Riki,Shadow Fiend,Silencer,Slark,Wraith King,",
+         "image":"media/Rubick.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":105,
+      "fields":{
+         "name":"Shadow Demon",
+         "counters":"Anti-Mage,Ember Spirit,Leshrac,Lion,Phantom Assassin,Storm Spirit,",
+         "image":"media/Shadow Demon.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":106,
+      "fields":{
+         "name":"Shadow Shaman",
+         "counters":"Mirana,Morphling,Riki,Wraith King,Visage,",
+         "image":"media/Shadow Shaman.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":107,
+      "fields":{
+         "name":"Silencer",
+         "counters":"Broodmother,Lycan,Nyx Assassin,Phantom Assassin,Phantom Lancer,Slark,Sniper,Ursa,",
+         "image":"media/Silencer.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":108,
+      "fields":{
+         "name":"Skywrath Mage",
+         "counters":"Anti-Mage,Huskar,Abaddon,Pugna,Nyx Assassin,Wraith King,",
+         "image":"media/Skywrath Mage.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":109,
+      "fields":{
+         "name":"Storm Spirit",
+         "counters":"Anti-Mage,Doom,Ember Spirit,Night Stalker,Nyx Assassin,Riki,",
+         "image":"media/Storm Spirit.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":110,
+      "fields":{
+         "name":"Techies",
+         "counters":"Abaddon,Anti-Mage,Batrider,Beastmaster,Chen,Death Prophet,Juggernaut,Lifestealer,Night Stalker,Oracle,Templar Assassin,Visage,Wraith King,Zeus,",
+         "image":"media/Techies.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":111,
+      "fields":{
+         "name":"Tinker",
+         "counters":"Anti-Mage,Clockwerk,Dazzle,Doom,Legion Commander,Lifestealer,Luna,Night Stalker,Nyx Assassin,Pudge,Silencer,Slark,Storm Spirit,Vengeful Spirit,Zeus,Pugna,",
+         "image":"media/Tinker.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":112,
+      "fields":{
+         "name":"Visage",
+         "counters":"Axe,Centaur Warrunner,Luna,Rubick,Timbersaw,Tidehunter,",
+         "image":"media/Visage.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":113,
+      "fields":{
+         "name":"Warlock",
+         "counters":"Weaver,Anti-Mage,Bloodseeker,Silencer,Dark Seer,Ember Spirit,Lycan,",
+         "image":"media/Warlock.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":114,
+      "fields":{
+         "name":"Windranger",
+         "counters":"Axe,Bloodseeker,Centaur Warrunner,Clockwerk,Ember Spirit,Morphling,Razor,Spectre,Venomancer,",
+         "image":"media/Windranger.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":115,
+      "fields":{
+         "name":"Winter Wyvern",
+         "counters":"Ancient Apparition,Invoker,Luna,Naga Siren,Omniknight,Outworld Devourer,Pugna,Skywrath Mage,Slark,Timbersaw,Tinker,Undying,",
+         "image":"media/Winter Wyvern.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":116,
+      "fields":{
+         "name":"Witch Doctor",
+         "counters":"Faceless Void,Lina,Luna,Morphling,Omniknight,Oracle,Riki,Rubick,Silencer,Vengeful Spirit,",
+         "image":"media/Witch Doctor.png"
+      }
+   },
+   {
+      "model":"heroes.hero",
+      "pk":117,
+      "fields":{
+         "name":"Zeus",
+         "counters":"Anti-Mage,Faceless Void,Chaos Knight,Juggernaut,Lifestealer,Meepo,Pudge,Pugna,Silencer,Ursa,Viper,",
+         "image":"media/Zeus.png"
+      }
+   }
+]
