@@ -4,7 +4,7 @@ pk = 0
 counterdict = []
 fulldict=dict()
 for heroid in range(1, 118): 
-    for heroid2 in range(heroid, 118):
+    for heroid2 in range(1, 118):
         if heroid != heroid2:
             pk += 1
             counter = {

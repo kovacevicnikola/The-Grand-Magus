@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'grandmagus.wsgi.application'
 DATABASES = {
        'default': {
            'ENGINE': 'djongo',
-           'NAME': 'herobase',
+           'NAME': 'herobase1',
        }
 }
 

@@ -13,12 +13,10 @@ export default class HeroSearch extends Component {
     }
     
     filterHeroes(arr, query) {
-
         return arr.filter(el => 
             el.name.toString().toLowerCase().indexOf(
-                query.toLowerCase()) !== -1)
-  }
-
+                query.toLowerCase()) !== -1)}
+        
     handleChange(event) {
         try { 
         console.log('query', this.state.query)
@@ -27,7 +25,7 @@ export default class HeroSearch extends Component {
         const heroQuery = this.filterHeroes(this.props.heroes, this.state.query)
         this.setState({ 
             [name]: value,
-            queryHeroes: heroQuery })
+            queryHeroes: heroQuery }, this.render)
         } catch(error) {
             console.log(error)
             console.log(this.state)
