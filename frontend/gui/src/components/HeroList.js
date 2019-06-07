@@ -1,18 +1,20 @@
-import React, { Component } from 'react'
-import Hero from './Hero'
+import React, { Component } from 'react';
+import Hero from './Hero';
+
 export default class HeroList extends Component {
+
     render() {
-        const {heroes} = this.props
-        return(
+        const { heroes } = this.props;
+        return (
             <React.Fragment>
-            
-            <div><h1>Hero List</h1></div>
-            {heroes.map(hero => {
-                return <Hero 
-                        key={hero.pk}
-                        hero={hero}/>
-            })}
-            
+                <h1>Hero List</h1>
+                <div style={{display: "flex", justifyContent: "space-around", flexWrap: "wrap"}}>
+                    {heroes.map(hero => {
+                        return <Hero selectedHero={this.props.selectedHero}
+                            key={hero.pk}
+                            hero={hero} />
+                    })}
+                </div>
             </React.Fragment>
         )
     }

@@ -8,39 +8,38 @@ import HeroSearch from './components/HeroSearch'
 
 
 export default class App extends Component {
-  constructor() {
-    super()
-    this.state = {
-      heroes: [],
-      url: "http://127.0.0.1:8000/api/heroes/"
-    }
-  }
-  async getHeroes() {
-    try {
-      const response = await axios.get(this.state.url);
-      
-      this.setState({
-        heroes: response.data
-      })
-    } catch (error) {
-      console.error(error);
-    }
-  }
-  
-  componentDidMount() {
-    this.getHeroes()
-  }
+	constructor() {
+		super()
+		this.state = {
+			heroes: []
+		}
+	}
+	async getHeroes() {
+		try {
+			const response = await axios.get("http://127.0.0.1:8000/api/heroes/");
 
-  render() {
+			this.setState({
+				heroes: response.data
+			})
+		} catch (error) {
+			console.error(error);
+		}
+	}
 
-    return (
-      <div>
-        <HeroSearch heroes={this.state.heroes}/>
-        
-        
+	componentDidMount() {
+		this.getHeroes()
+	}
 
-      </div>
-    )
-  }
+	render() {
+
+		return (
+			<div>
+				<HeroSearch heroes={this.state.heroes} />
+
+
+
+			</div>
+		)
+	}
 }
 

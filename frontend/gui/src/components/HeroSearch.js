@@ -6,56 +6,54 @@ export default class HeroSearch extends Component {
         super()
         this.state = {
             queryHeroes: [],
-            query : ""
+            query: "",
+            firstRender: true
         }
-
-        this.handleChange = this.handleChange.bind(this)
     }
-    
-    filterHeroes(arr, query) {
-        return arr.filter(el => 
+
+    filterHeroes = (query) => {
+        return this.props.heroes.filter(el =>
             el.name.toString().toLowerCase().indexOf(
-                query.toLowerCase()) !== -1)}
-        
-    handleChange(event) {
-        try { 
-        console.log('query', this.state.query)
-        console.log('qheroes', this.state.queryHeroes)
-        const {name, value} = event.target
-        const heroQuery = this.filterHeroes(this.props.heroes, this.state.query)
-        this.setState({ 
+                query.toLowerCase()) !== -1)
+    }
+
+    handleChange = event => {
+        const { name, value } = event.target;
+
+        const heroQuery = this.filterHeroes(value);
+        this.setState({
             [name]: value,
-            queryHeroes: heroQuery }, this.render)
-        } catch(error) {
-            console.log(error)
-            console.log(this.state)
-            console.log(this.props)
-        }
-}   
+            queryHeroes: heroQuery,
+            firstRender: false
+        });
+    }
+
+    selectedHero=(hero)=>{
+        console.log("HEROOOOOO", hero)
+    }
 
     onSubmit() {
 
     }
 
     render() {
-        
         return (
             <React.Fragment>
-            <div>
-                <form>
-                    <label>
-                        Hero Name:
+                <div>
+                    <form>
+                        <label>
+                            Hero Name:
                         <input
-                        type="text" 
-                        name="query"
-                        placeholder="Hero Name"
-                        onChange={this.handleChange}
-                        value={this.state.query} />
-                    </label>
-                    <input type="submit" value="Submit" />
+                                type="text"
+                                name="query"
+                                placeholder="Hero Name"
+                                onChange={this.handleChange}
+                                value={this.state.query} />
+                        </label>
+                        <input type="submit" value="Submit" />
                     </form>
-            </div>
-            <HeroList heroes={this.state.queryHeroes}/>
+                </div>
+                <HeroList selectedHero={this.selectedHero} heroes={this.state.queryHeroes.length === 0 && this.state.firstRender ? this.props.heroes : this.state.queryHeroes} />
             </React.Fragment>
         )
     }
