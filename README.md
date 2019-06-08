@@ -4,7 +4,7 @@ A DOTA2 counter finder; add up to 5 heroes in the enemy team and get their count
 
 ## Getting started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+These instructions should get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
 Backend:
