@@ -67,10 +67,10 @@ export default class HeroSearch extends Component {
                                 onChange={this.handleChange}
                                 value={this.state.query} />
                         </label>
-                        <input type="submit" value="Submit" />
+                        
                     </form>
                 </div>
-                <FinderList heroes={this.state.finderList} deselectedHero={this.deselectedHero} />
+                <FinderList getCounters={this.props.getCounters} heroes={this.state.finderList} deselectedHero={this.deselectedHero} />
                 <HeroList selectedHero={this.selectedHero} heroes={this.state.queryHeroes.length === 0 && this.state.firstRender ? this.props.heroes : this.state.queryHeroes} />
             </React.Fragment>
         )

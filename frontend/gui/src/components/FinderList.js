@@ -3,6 +3,7 @@ import Hero from './Hero'
 export default class FinderList extends Component {
     render() {
         const { heroes } = this.props;
+
         return (
             <React.Fragment>
                 <h1>Hero List</h1>
@@ -13,6 +14,7 @@ export default class FinderList extends Component {
                             hero={hero} />
                     })}
                 </div>
+                <input type="submit" value="Submit" onClick={this.props.getCounters(heroes)}/>
             </React.Fragment>
         )
     }
