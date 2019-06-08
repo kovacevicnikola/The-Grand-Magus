@@ -1,4 +1,4 @@
-##The Grand Magus Project
+# Grand Magus Project
 
 A DOTA2 counter finder; add up to 5 heroes in the enemy team and get their counters.
 
