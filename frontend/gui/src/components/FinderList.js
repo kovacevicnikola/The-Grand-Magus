@@ -1,11 +1,19 @@
 import React, { Component } from 'react'
-
+import Hero from './Hero'
 export default class FinderList extends Component {
     render() {
+        const { heroes } = this.props;
         return (
-            <div>
-                
-            </div>
+            <React.Fragment>
+                <h1>Hero List</h1>
+                <div style={{display: "flex", justifyContent: "space-around", flexWrap: "wrap"}}>
+                    {heroes.map(hero => {
+                        return <Hero selectedHero={this.props.deselectedHero}
+                            key={hero.pk}
+                            hero={hero} />
+                    })}
+                </div>
+            </React.Fragment>
         )
     }
 }
