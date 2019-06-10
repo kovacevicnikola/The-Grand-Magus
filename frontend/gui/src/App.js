@@ -31,15 +31,21 @@ export default class App extends Component {
 		this.getHeroes()
 	}
 
-	getCounters(counterList) {
+	getCounters = (counterList) => {
+		let currentComponent = this;
 		if (counterList.length===5) {
 		const pkList = counterList.map(el => el.pk)
 		pkList.forEach(item => 
-			console.log(axios.get("http://127.0.0.1:8000/api/herocounters/"+item+"/counter_list/").then(function(response) {console.log(response)}))
-			// axios.get("http://127.0.0.1:8000/api/"+item+"/counter_list/"))
-			// .then(function(response) {
-			// 	console.log(response)}
-				)} else {
+			axios.get("http://127.0.0.1:8000/api/herocounters/"+item+"/counter_list/")
+			.then(function(response) {
+				if (response!==undefined) {
+				
+				currentComponent.setState(prevState => ({
+				counterData: prevState.counterData.concat(response.data)
+			}))
+				console.log(currentComponent.state)
+		}}))
+				} else {
 					console.log('counterlist else block', counterList)
 				}
 	}

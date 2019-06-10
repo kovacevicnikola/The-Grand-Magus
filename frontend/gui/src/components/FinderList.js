@@ -14,7 +14,7 @@ export default class FinderList extends Component {
                             hero={hero} />
                     })}
                 </div>
-                <input type="submit" value="Submit" onClick={this.props.getCounters(heroes)}/>
+                <input type="submit" value="Submit" onClick={() => {this.props.getCounters(heroes)}}/>
             </React.Fragment>
         )
     }
