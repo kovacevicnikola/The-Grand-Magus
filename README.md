@@ -8,26 +8,26 @@ These instructions should get you a copy of the project up and running on your l
 
 ### Prerequisites
 Backend:
-    python 3.7
-    pipenv
-    urllib
-    bs4
-    Django 2.2
-    djongo
-    Pillow
-    MongoDB
-    psycopg2-binary
-    djangorestframework
-    markdown
-    django-filter
-    django-cors-headers
+python 3.7
+pipenv
+urllib
+bs4
+Django 2.2
+djongo
+Pillow
+MongoDB
+psycopg2-binary
+djangorestframework
+markdown
+django-filter
+django-cors-headers
 
 Frontend:
-    nodeJS
-    reactJS
-    axios
+nodeJS
+reactJS
+axios
 
-###Installation 
+### Installation 
 
 Copy the github repository to your local machine
 ```
