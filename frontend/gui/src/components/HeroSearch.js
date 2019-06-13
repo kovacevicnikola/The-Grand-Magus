@@ -70,7 +70,7 @@ export default class HeroSearch extends Component {
                         
                     </form>
                 </div>
-                <FinderList getCounters={this.props.getCounters} heroes={this.state.finderList} deselectedHero={this.deselectedHero} />
+                <FinderList counterData={this.props.counterData} getCounters={this.props.getCounters} heroes={this.state.finderList} deselectedHero={this.deselectedHero} />
                 <HeroList selectedHero={this.selectedHero} heroes={this.state.queryHeroes.length === 0 && this.state.firstRender ? this.props.heroes : this.state.queryHeroes} />
             </React.Fragment>
         )

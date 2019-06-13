@@ -12,7 +12,7 @@ export default class App extends Component {
 		super()
 		this.state = {
 			heroes: [],
-			counterData: []
+			counterData: [],
 		}
 	}
 	async getHeroes() {
@@ -33,8 +33,10 @@ export default class App extends Component {
 
 	getCounters = (counterList) => {
 		let currentComponent = this;
-		if (counterList.length===5) {
 		const pkList = counterList.map(el => el.pk)
+		currentComponent.setState(prevstate => ({
+			counterData: []
+		}))
 		pkList.forEach(item => 
 			axios.get("http://127.0.0.1:8000/api/herocounters/"+item+"/counter_list/")
 			.then(function(response) {
@@ -43,18 +45,16 @@ export default class App extends Component {
 				currentComponent.setState(prevState => ({
 				counterData: prevState.counterData.concat(response.data)
 			}))
-				console.log(currentComponent.state)
+				console.log(currentComponent.state.counterData)
+		
 		}}))
-				} else {
-					console.log('counterlist else block', counterList)
-				}
 	}
 
 	render() {
 
 		return (
 			<div>
-				<HeroSearch getCounters={this.getCounters} heroes={this.state.heroes} />
+				<HeroSearch counterData={this.state.counterData} getCounters={this.getCounters} heroes={this.state.heroes} />
 
 
 
