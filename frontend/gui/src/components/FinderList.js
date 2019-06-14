@@ -21,10 +21,10 @@ export default class FinderList extends Component {
                         
 						heroCounterHolder.heroCounters.push(item2)
                         heroCounterHolder.value = heroCounterHolder.value + item2.score 
-                        console.log(heroCounterHolder)
+                        
                     }}  
             currentComponent.setState(prevState => ({
-                                      counterSort: [...prevState.counterSort, heroCounterHolder]}))
+                                      counterSort: [...prevState.counterSort, heroCounterHolder]}), () => console.log(currentComponent.state))
                         
 			}
         }
