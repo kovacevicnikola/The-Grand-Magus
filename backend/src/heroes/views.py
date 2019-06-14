@@ -43,7 +43,7 @@ class HeroCounterViewSet(viewsets.ModelViewSet):
         if request.method == 'GET':
              # retrieve an object by pk provided
             hero = Hero.objects.get(pk=pk)
-            herocounters = HeroCounters.objects.filter(ct1=hero).distinct().order_by('score')
+            herocounters = HeroCounters.objects.filter(ct1=hero).distinct().order_by('-score')
             herocounters_json = HeroCounterSerializer(herocounters, many=True)
             return Response(herocounters_json.data)
         elif request.method == 'PATCH':
@@ -56,7 +56,7 @@ class HeroCounterViewSet(viewsets.ModelViewSet):
             # validate and update
             if serializer.is_valid():
                 
-                
+                serializer.save()
                 serializer_dict = serializer.data
                 serializer_dict["message"] = "Counter score updated successfully."
                 return Response(serializer_dict, status=status.HTTP_200_OK)
