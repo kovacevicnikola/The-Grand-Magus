@@ -48,7 +48,7 @@ export default class HeroSearch extends Component {
             console.log(this.state.finderList)
         }
     }
-
+    
     onSubmit() {
 
     }
@@ -70,8 +70,19 @@ export default class HeroSearch extends Component {
                         
                     </form>
                 </div>
-                <FinderList counterData={this.props.counterData} getCounters={this.props.getCounters} heroes={this.state.finderList} deselectedHero={this.deselectedHero} />
-                <HeroList selectedHero={this.selectedHero} heroes={this.state.queryHeroes.length === 0 && this.state.firstRender ? this.props.heroes : this.state.queryHeroes} />
+                <FinderList 
+                            counterData={this.props.counterData} 
+                            getCounters={this.props.getCounters} 
+                            heroes={this.state.finderList} 
+                            deselectedHero={this.deselectedHero}
+                            changeView={this.props.changeView}
+                            renderCounters={this.props.renderCounters}
+                            createCounterScore={this.props.createCounterScore} />
+                <HeroList 
+                            selectedHero={this.selectedHero} 
+                            heroes={this.state.queryHeroes}
+                            changeView={this.props.changeView}
+							renderCounters={this.props.renderCounters} />
             </React.Fragment>
         )
     }

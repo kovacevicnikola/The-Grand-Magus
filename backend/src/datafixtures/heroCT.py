@@ -1,5 +1,17 @@
 import json
+from pprint import pprint
+with open('fixturestr.json', encoding='utf-8') as data_file:
+    data = json.loads(data_file.read())
+#    for n in data:
+#       pprint(n["fields"]["counters"].rsplit(','))
 
+    if 1 in data['pk']:
+        print('works')
+
+
+
+
+'''
 pk = 0
 counterdict = []
 fulldict=dict()
@@ -28,3 +40,4 @@ for heroid in range(1, 118):
 with open("fixtureCT.json", 'a+') as outfile:  
     json.dump(counterdict, outfile)
         
+'''
