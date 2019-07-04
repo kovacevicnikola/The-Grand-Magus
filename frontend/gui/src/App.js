@@ -36,64 +36,72 @@ export default class App extends Component {
 	}
 
 	getCounters = (counterList) => {
-		console.log('get counters')
-		let currentComponent = this 
-		const pkList = counterList.map(el => el.pk)
-		
-		pkList.forEach(item => 
-			axios.get("http://127.0.0.1:8000/api/herocounters/"+item+"/counter_list/")
-			.then(function(response) {
-				currentComponent.setState(prevState => ({
-				counterData: prevState.counterData.concat(response.data)
-			}))
-		console.log('getCounters state', currentComponent.state.counterData)
 
-		
-	}))
-		
+		let currentComponent = this
+		const pkList = counterList.map(el => el.pk)
+
+		const urlArray = pkList.map(item => `http://127.0.0.1:8000/api/herocounters/${item}/counter_list/`);
+		const axArray = urlArray.map(item => axios.get(item))
+
+		axios.all(axArray).then(response => {
+			const heroData = response.map(item => item.data);
+			let unpData = []
+			heroData.forEach(item => {
+				unpData = [...unpData, ...item];
+			});
+			currentComponent.setState({ counterData : unpData }, () => this.createCounterScore(unpData))
+		})
+
 	}
 
 	createCounterScore = (arr) => {
-		console.log('counter score')
-		let currentComponent = this 
-		let heroarray = []
-		let keyvalue = 0
-		if (arr!==undefined&&arr.length!==0) {
+		let currentComponent = this;
+		let heroarray = [];
+		let pk = 0;
+		if (arr !== undefined && arr.length !== 0) {
 			for (let item of arr) {
-				keyvalue = keyvalue + 1
-                let heroCounterHolder = {
-                    heroCounters: [],
-					value : 0,
-					key : keyvalue
-					
-                    }
+				pk = pk + 1;
+				let heroCounterHolder = {
+					heroCounters: [],
+					value: 0,
+					key: pk
+
+				}
 				for (let item2 of arr) {
-					if (item2.ct2===item.ct2 && item!==item2) {
-                        console.log('herocounterholder', heroCounterHolder, currentComponent.state)
+					if (item2.ct2 === item.ct2) {
 						heroCounterHolder.heroCounters.push(item2)
-                        heroCounterHolder.value = heroCounterHolder.value + item2.score 
-                        
-					}}  
-				
+						heroCounterHolder.value = heroCounterHolder.value + item2.score
+
+					}
+				}
+				if (!(heroarray.some(e => e.heroCounters[0].ct2 === item.ct2))) {
+
 					heroarray = [...heroarray, heroCounterHolder]
-					heroarray.sort((a, b) => (a.value > b.value) ? 1 : -1)
-                        
+					heroarray.sort((a, b) => (a.value > b.value) ? -1 : 1)
+				}
 			}
-			
-        }
-		
+
+		}
+
 		currentComponent.setState(prevState => ({
-			counterSort: prevState.counterSort.concat(heroarray)}), () => console.log('counterscoreend', heroarray))
-    }
+			counterSort: prevState.counterSort.concat(heroarray)
+		}))
+	}
 
 	changeView = () => {
 		let currentComponent = this
 		currentComponent.setState(prevState => ({
 			renderCounters: !prevState.renderCounters
 		}))
-		console.log('changeviewstate', currentComponent.state.renderCounters)
-	}
 
+	}
+	updateDB = (pk, score) => {
+		axios.patch('http://127.0.0.1:8000/api/herocounters/' + pk + '/counter_list/', {
+			score: score
+		}).then(function (response) {
+			console.log(response)
+		})
+	}
 
 
 	render() {
@@ -101,17 +109,18 @@ export default class App extends Component {
 		return (
 			<div>
 				{!this.state.renderCounters ?
-				<HeroSearch counterData={this.state.counterData} 
-							getCounters={this.getCounters} 
-							heroes={this.state.heroes}
-							changeView={this.changeView}
-							renderCounters={this.state.renderCounters}
-							createCounterScore={this.createCounterScore}/> 
-				:
-                <FoundList foundHero={this.state.counterSort}
-						   changeView={this.changeView}
-						   heroes={this.state.heroes}
-				/>
+					<HeroSearch counterData={this.state.counterData}
+						getCounters={this.getCounters}
+						heroes={this.state.heroes}
+						changeView={this.changeView}
+						renderCounters={this.state.renderCounters}
+						createCounterScore={this.createCounterScore} />
+					:
+					<FoundList foundHero={this.state.counterSort}
+						changeView={this.changeView}
+						heroes={this.state.heroes}
+						updateDB={this.updateDB}
+					/>
 				}
 
 			</div>

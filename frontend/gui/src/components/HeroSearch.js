@@ -56,7 +56,7 @@ export default class HeroSearch extends Component {
     render() {
         return (
             <React.Fragment>
-                <div>
+                <div className="input-bar">
                     <form>
                         <label>
                             Hero Name:
@@ -65,7 +65,8 @@ export default class HeroSearch extends Component {
                                 name="query"
                                 placeholder="Hero Name"
                                 onChange={this.handleChange}
-                                value={this.state.query} />
+                                value={this.state.query}
+                                 />
                         </label>
                         
                     </form>

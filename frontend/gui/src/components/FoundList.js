@@ -6,13 +6,16 @@ export default class FoundList extends Component {
 
             <React.Fragment>
             <h1>Counters List</h1>
-            {console.log('foundlist props',this.props)}
+
             <input type="submit" value="Submit" onClick={() => this.props.changeView()}/>
             <div style={{display: "flex", justifyContent: "space-around", flexWrap: "wrap"}}>
                 {this.props.foundHero.slice(0,10).map(counteringHero => {
-                    return <FoundHero counteringHero = {counteringHero.heroCounters}
+
+                    return <FoundHero counteringHero = {counteringHero}
+                                      value = {counteringHero.value}
                                       key = {counteringHero.key} 
-                                      heroes={this.props.heroes} />
+                                      heroes={this.props.heroes} 
+                                      updateDB={this.props.updateDB} />
                 })}
             </div>
         </React.Fragment>

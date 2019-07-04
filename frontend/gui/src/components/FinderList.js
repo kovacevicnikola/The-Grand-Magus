@@ -17,17 +17,19 @@ export default class FinderList extends Component {
         return (
             <React.Fragment>
 
-                <h1>Hero List</h1>
-                <div style={{display: "flex", justifyContent: "space-around", flexWrap: "wrap"}}>
+                
+                <div style={{alignItems: "center", display: "flex", justifyContent: "space-around", flexWrap: "wrap"}}>
                     {heroes.map(hero => {
                         return <Hero selectedHero={this.props.deselectedHero}
                             key={hero.pk}
                             hero={hero} />
                     })}
                 </div>
+                <div className="input-bar">
                 <input type="submit" value="Submit" onClick={() => this.props.getCounters(heroes)}/>
                 <input type="submit" value="Submit" onClick={() => this.props.createCounterScore(this.props.counterData)}/>
                 <input type="submit" value="Submit" onClick={() => this.props.changeView()}/>
+                </div>
             </React.Fragment>
         )
     }
