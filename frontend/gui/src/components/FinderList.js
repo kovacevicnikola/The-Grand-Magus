@@ -18,7 +18,7 @@ export default class FinderList extends Component {
             <React.Fragment>
 
                 
-                <div style={{alignItems: "center", display: "flex", justifyContent: "space-around", flexWrap: "wrap"}}>
+                <div className="found-div">
                     {heroes.map(hero => {
                         return <Hero selectedHero={this.props.deselectedHero}
                             key={hero.pk}
@@ -27,8 +27,8 @@ export default class FinderList extends Component {
                 </div>
                 <div className="input-bar">
                 <input type="submit" value="Submit" onClick={() => this.props.getCounters(heroes)}/>
-                <input type="submit" value="Submit" onClick={() => this.props.createCounterScore(this.props.counterData)}/>
-                <input type="submit" value="Submit" onClick={() => this.props.changeView()}/>
+{/*                 <input type="submit" value="Submit" onClick={() => this.props.createCounterScore(this.props.counterData)}/>
+                <input type="submit" value="Submit" onClick={() => this.props.changeView()}/> */}
                 </div>
             </React.Fragment>
         )

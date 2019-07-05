@@ -85,7 +85,7 @@ export default class App extends Component {
 
 		currentComponent.setState(prevState => ({
 			counterSort: prevState.counterSort.concat(heroarray)
-		}))
+		}), () => this.changeView())
 	}
 
 	changeView = () => {
