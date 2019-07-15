@@ -15,8 +15,6 @@ djangorestframework = "*"
 markdown = "*"
 django-filter = "*"
 django-cors-headers = "*"
-mod-wsgi = "==4.5.24"
-mod-wsgi-express = "*"
 
 [requires]
 python_version = "3.7"
