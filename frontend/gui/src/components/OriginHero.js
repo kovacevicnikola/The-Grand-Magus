@@ -1,14 +1,36 @@
-import React, { Component } from 'react'
-
+import React, { Component } from 'react';
+import plus from '../plus2.svg';
+import minus from '../minus2.svg'
 export default class OriginHero extends Component {
+    constructor(){
+        super()
+
+        this.state = {
+            modifier: 0
+        }
+
+    }
+
+    callMultiple = (newscore, change) => {
+        this.props.updateDB(this.props.pk, newscore)
+        this.setState(prevState => ({
+            modifier: prevState.modifier + change
+        }))
+    }
+
+
     render() {
         return (
             <div>
-                <img src={this.props.hero.image} title={this.props.hero.name} alt = 'hero' onMouseLeave={() => this.props.changeView()}/>
-                <h2>Individual score is {this.props.score}</h2> 
-                
-                <input type="submit" value="Score up" onClick={() => this.props.updateDB((this.props.pk), (this.props.score+1))}/>
-                <input type="submit" value="Score down" onClick={() => this.props.updateDB((this.props.pk), (this.props.score-1))}/>
+                <div style={{ position: 'relative' }}>
+                    <img style={{ verticalAlign: 'middle' }} src={this.props.hero.image} title={this.props.hero.name} alt='hero' />
+                    <div style={{ position: 'absolute', right: '0', bottom: '0' }}>
+                            <img src={plus} style={{ width: '30px', height: '30px', backgroundColor: 'rgb(43, 175, 10)', borderRadius: '7px'}} onClick={() => this.callMultiple((this.props.score+1), 1)}/>
+                            <img src={minus} style={{ width: '30px', height: '30px', backgroundColor: 'rgb(43, 175, 10)', borderRadius: '7px'}} onClick={() => this.callMultiple((this.props.score-1), -1)} />
+
+                    </div>
+                </div>
+                <h2>Score: {this.props.score+this.state.modifier}</h2>
             </div>
         )
     }

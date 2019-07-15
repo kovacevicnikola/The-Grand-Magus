@@ -40,15 +40,15 @@ export default class FoundHero extends Component {
         let image = this.getImage(this.props.counteringHero.heroCounters)
         let name = this.getName(this.props.counteringHero)
         return (
-            <div>
-            { !this.state.mouseOver ?
-                <React.Fragment>
+            <div style={{position: 'relative'}}>
                 <img src={image}
                     alt='hero'
                     title={name}
-                    onMouseEnter={() => this.changeView()}
-                    onMouseLeave={() => this.changeView()} />
+                    onClick={() => this.changeView()}
+                     />
                 <h2>Value is {this.props.value}</h2>
+            { !this.state.mouseOver ?
+                <React.Fragment>
                 </React.Fragment>
                 :
                 <OriginHeroes 

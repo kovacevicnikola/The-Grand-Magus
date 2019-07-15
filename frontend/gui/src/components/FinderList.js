@@ -6,7 +6,7 @@ export default class FinderList extends Component {
     constructor() {
         super()
         this.state = {
-            counterSort : []
+            counterSort: []
         }
     }
 
@@ -15,22 +15,16 @@ export default class FinderList extends Component {
         const { heroes } = this.props;
 
         return (
-            <React.Fragment>
-
-                
+            <div className='search-wrapper'>
                 <div className="found-div">
                     {heroes.map(hero => {
                         return <Hero selectedHero={this.props.deselectedHero}
                             key={hero.pk}
                             hero={hero} />
                     })}
+
                 </div>
-                <div className="input-bar">
-                <input type="submit" value="Submit" onClick={() => this.props.getCounters(heroes)}/>
-{/*                 <input type="submit" value="Submit" onClick={() => this.props.createCounterScore(this.props.counterData)}/>
-                <input type="submit" value="Submit" onClick={() => this.props.changeView()}/> */}
-                </div>
-            </React.Fragment>
+            </div>
         )
     }
 }

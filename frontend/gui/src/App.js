@@ -98,8 +98,6 @@ export default class App extends Component {
 	updateDB = (pk, score) => {
 		axios.patch('http://127.0.0.1:8000/api/herocounters/' + pk + '/counter_list/', {
 			score: score
-		}).then(function (response) {
-			console.log(response)
 		})
 	}
 
@@ -107,7 +105,7 @@ export default class App extends Component {
 	render() {
 
 		return (
-			<div>
+			<div className="app-wrapper">
 				{!this.state.renderCounters ?
 					<HeroSearch counterData={this.state.counterData}
 						getCounters={this.getCounters}

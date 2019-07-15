@@ -25,14 +25,15 @@ export default class OriginHeroes extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{ display: 'flex', position: 'absolute', left: '330px', top: '0', alignItems: 'center', justifyContent: 'space-between', textAlign: 'center' }}>
                 {
                     this.props.relations.map(item => {
                         for (let hero of this.props.heroes) {
 
                             if (item.ct1 === hero.pk) {
-                                console.log('if block', hero)
+
                                 return <OriginHero
+                                    key={item.pk}
                                     pk={item.pk}
                                     hero={hero}
                                     score={item.score}

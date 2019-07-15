@@ -29,28 +29,24 @@ export default class HeroSearch extends Component {
         });
     }
 
-    selectedHero=(hero)=>{
-        if (this.state.finderList.length<5 && !this.state.finderList.includes(hero)) {
-        this.setState(prevState => ({
-            finderList: [...prevState.finderList, hero]
-        }))
+    selectedHero = (hero) => {
+        if (this.state.finderList.length < 5 && !this.state.finderList.includes(hero)) {
+            this.setState(prevState => ({
+                finderList: [...prevState.finderList, hero]
+            }))
 
-    } else {
-        console.log('hero already in list')
+        } else {
+            console.log('hero already in list')
+        }
     }
-    }
-    deselectedHero=(hero)=>{
-        if (this.state.finderList.length>0) {
-        this.setState(prevState => ({
-            finderList: prevState.finderList.filter(tryhero => tryhero !== hero)
-        }))
+    deselectedHero = (hero) => {
+        if (this.state.finderList.length > 0) {
+            this.setState(prevState => ({
+                finderList: prevState.finderList.filter(tryhero => tryhero !== hero)
+            }))
         } else {
             console.log(this.state.finderList)
         }
-    }
-    
-    onSubmit() {
-
     }
 
     render() {
@@ -66,24 +62,27 @@ export default class HeroSearch extends Component {
                                 placeholder="Hero Name"
                                 onChange={this.handleChange}
                                 value={this.state.query}
-                                 />
+                                className="search-input"
+                            />
                         </label>
-                        
+
                     </form>
+                    <input type="submit" className="search-submit" value="Submit" onClick={() => this.props.getCounters(this.state.finderList)} />
+
                 </div>
-                <FinderList 
-                            counterData={this.props.counterData} 
-                            getCounters={this.props.getCounters} 
-                            heroes={this.state.finderList} 
-                            deselectedHero={this.deselectedHero}
-                            changeView={this.props.changeView}
-                            renderCounters={this.props.renderCounters}
-                            createCounterScore={this.props.createCounterScore} />
-                <HeroList 
-                            selectedHero={this.selectedHero} 
-                            heroes={this.state.queryHeroes}
-                            changeView={this.props.changeView}
-							renderCounters={this.props.renderCounters} />
+                <FinderList
+                    counterData={this.props.counterData}
+                    getCounters={this.props.getCounters}
+                    heroes={this.state.finderList}
+                    deselectedHero={this.deselectedHero}
+                    changeView={this.props.changeView}
+                    renderCounters={this.props.renderCounters}
+                    createCounterScore={this.props.createCounterScore} />
+                <HeroList
+                    selectedHero={this.selectedHero}
+                    heroes={this.state.queryHeroes}
+                    changeView={this.props.changeView}
+                    renderCounters={this.props.renderCounters} />
             </React.Fragment>
         )
     }
